@@ -88,7 +88,7 @@ const App = () => {
           <Spacing />
           <Footer />
 
-          <ThemeProvider theme={theme}>
+          {/* <ThemeProvider theme={theme}>
             <ConnectionProvider endpoint={endpoint}>
               <WalletProvider wallets={wallets} autoConnect>
                 <WalletDialogProvider>
@@ -102,7 +102,7 @@ const App = () => {
                 </WalletDialogProvider>
               </WalletProvider>
             </ConnectionProvider>
-          </ThemeProvider>
+          </ThemeProvider> */}
         </div>
       </div>
     </>
