@@ -78,7 +78,7 @@ const App = () => {
           <Spacing />
           <About />
           <BackTopButton />
-          <Spacing />
+          {/* <Spacing /> */}
           <MintCard />
           <Spacing />
           <Gallery />

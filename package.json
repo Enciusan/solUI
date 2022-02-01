@@ -1,5 +1,5 @@
 {
-  "name": "candymachine-v2-boiler-mint-site-noflp",
+  "name": "nnfoxesclub",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,11 +45,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=\"\" && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy:gh": "gh-pages -d ./build/ --repo https://github.com/Enciusan/my-ui-proj -t true --branch gh-pages-3",
-    "deploy": "cross-env ASSET_PREFIX=/my-ui-proj/ yarn build && yarn deploy:gh"
+    "deploy:gh": "gh-pages -d ./build/ --repo https://github.com/Enciusan/solUI -t true --branch gh-pages-3",
+    "deploy": "cross-env ASSET_PREFIX=/solUI/ yarn build && yarn deploy:gh"
   },
   "eslintConfig": {
     "extends": [

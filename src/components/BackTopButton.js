@@ -2,12 +2,11 @@ import "../App.css";
 
 export default function BackTopButton() {
   return (
-    <a href="#nav">
-     
+    <a href="#nav">     
       <div className="flex relative ">
-        <div class="fixed right-10 bottom-64 ">
+        <div className="fixed right-10 bottom-64 ">
           <div className="absolute w-10 h-60 rounded border-2  ">
-            <div class="flex-1 overflow-y-scroll">
+            <div className="flex-1 overflow-y-scroll">
               <div className="absolute right-0 text-center mr-4 ">
                 <div className=" text-white text-sm font-germania">
                   <p>B</p>
