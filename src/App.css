@@ -7,8 +7,6 @@
 /* FONT LONG SHOT */
 @import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
 
-@import "react-awesome-button/dist/themes/theme-blue.css";
-
 .App {
   text-align: center;
 }
@@ -71,8 +69,15 @@ iframe {
   background-repeat: no-repeat;
 } */
 
-html, body { 
-  background: url("./img/gifback.gif") no-repeat center center fixed; 
+body:after {
+  content:"";
+  position: fixed;
+  top: 0;
+  height: 100vh; 
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: url("./img/gifback.gif") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -90,8 +95,6 @@ html, body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
-
 
 .bg-fixed {
   background-attachment: fixed;

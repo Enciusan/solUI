@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Disclosure as="nav" className=" md:w-full w-screen " id="nav">
+      <Disclosure as="nav" className=" md:w-full w-screen" id="nav">
         {({ open }) => (
           <>
             <div className="md:px-8 px-auto flex">
@@ -111,15 +111,14 @@ export default function Navbar() {
                     className="fixed right-0 top-0 bottom-0 left-0 bg-neutral-800 text-center bg-opacity-95 origin-top-right z-10"
                     onClick={() => setIsVisible(!isVisible)}
                   >
-                    <ul>
+                    <ul >
                       <li className="text-lg font-pirata">
                         <a
-                          href="#about"
                           className="block px-2 text-white font-pirata flex justify-end"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-8 w-8 flex"
+                            className="h-14 w-14 flex pt-6"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
@@ -134,7 +133,7 @@ export default function Navbar() {
                       <li className="text-lg font-pirata">
                         <a
                           href="#about"
-                          className="block text-5xl px-2 py-10 text-white font-pirata"
+                          className="block text-4xl px-2 py-7 text-white font-pirata"
                         >
                           About
                         </a>
@@ -142,7 +141,7 @@ export default function Navbar() {
                       <li className="text-lg font-pirata">
                         <a
                           href="#mint"
-                          className="block text-5xl px-2 py-10 text-white font-pirata"
+                          className="block text-4xl px-2 py-7 text-white font-pirata"
                         >
                           Minting
                         </a>
@@ -150,7 +149,7 @@ export default function Navbar() {
                       <li className="text-lg font-pirata">
                         <a
                           href="#roadmap"
-                          className="block text-5xl px-2 py-10 text-white font-pirata"
+                          className="block text-4xl px-2 py-7 text-white font-pirata"
                         >
                           Roadmap
                         </a>
@@ -158,7 +157,7 @@ export default function Navbar() {
                       <li className="text-lg font-pirata">
                         <a
                           href="#gallery"
-                          className="block text-5xl px-2 py-10 text-white font-pirata"
+                          className="block text-4xl px-2 py-7 text-white font-pirata"
                         >
                           Gallery
                         </a>
@@ -166,7 +165,7 @@ export default function Navbar() {
                       <li className="text-lg font-pirata">
                         <a
                           href="#team"
-                          className="block text-5xl px-2 py-10 text-white font-pirata"
+                          className="block text-4xl px-2 py-7 text-white font-pirata"
                         >
                           Team
                         </a>
@@ -174,7 +173,7 @@ export default function Navbar() {
                       <li className="text-lg font-pirata">
                         <a
                           href="#faq"
-                          className="block text-5xl px-2 py-10 text-white font-pirata"
+                          className="block text-4xl px-2 py-7 text-white font-pirata"
                         >
                           FAQ
                         </a>
