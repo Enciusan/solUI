@@ -77,7 +77,7 @@ body:after {
   left: 0;
   right: 0;
   z-index: -1;
-  background: url("./img/gifback.gif") no-repeat center center fixed;
+  background: url("./img/gifback.gif") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
