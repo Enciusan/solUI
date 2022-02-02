@@ -2,8 +2,8 @@ import "../App.css";
 
 export default function Gallery() {
   return (
-    <div className="w-full sm:h-screen" id="gallery">
-    <div className="sm:text-7xl text-5xl font-pirata text-center text-white sm:my-28 py-20">Gallery</div>
+    <div className="w-full sm:h-full" id="gallery">
+    <div className="sm:text-7xl text-5xl font-pirata text-center text-white sm:pb-20 py-20">Gallery</div>
     <div className="flex flex-row justify-center mx-10 ">
       <div className="slider lazy w-full">
           <button type="button" className="slick-next">

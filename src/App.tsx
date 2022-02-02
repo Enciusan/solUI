@@ -9,7 +9,6 @@ import Spacing from "./components/Spacing";
 import BackTopButton from "./components/BackTopButton";
 import Intro from "./components/Intro";
 import Team from "./components/Team";
-import Test from "./components/Test";
 
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -54,7 +53,7 @@ const txTimeout = 30000; // milliseconds (confirm this works for your project)
 const App = () => {
   const endpoint = useMemo(() => clusterApiUrl(network), []);
 
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
 
   const wallets = useMemo(
     () => [
@@ -78,12 +77,13 @@ const App = () => {
           <Spacing />
           <About />
           <BackTopButton />
-          {/* <Spacing /> */}
+          <Spacing />
           <MintCard />
           <Spacing />
           <Gallery />
           <Spacing />
           <Team />
+          {/* <Spacing /> */}
           <FAQ />
           <Spacing />
           <Footer />

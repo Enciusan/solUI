@@ -130,6 +130,7 @@ export default function Navbar() {
                           </svg>
                         </a>
                       </li>
+                      <div className="pt-10">
                       <li className="text-lg font-pirata">
                         <a
                           href="#about"
@@ -178,6 +179,7 @@ export default function Navbar() {
                           FAQ
                         </a>
                       </li>
+                      </div>
                     </ul>
                   </Transition>
                 </div>
