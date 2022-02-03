@@ -1,4 +1,6 @@
+import { SiTwitter, SiDiscord } from "react-icons/si";
 import "../App.css";
+
 
 export default function Intro() {
   return (
@@ -13,14 +15,11 @@ export default function Intro() {
         <div className="flex flex-row sm:px-5 px-3">
           <a
             href="https://twitter.com/NNFoxesclub"
-            className="flex justify-between border-2 shadow shadow-white rounded-md inset-x-36 sm:mt-0 mt-10 sm:mx-0 mx-auto w-60 h-16"
+            className="flex justify-between border-2 shadow-sm shadow-gray-200 rounded-md sm:mt-0 mt-10 sm:mx-0 mx-auto w-60 h-16 bg-gray-200"
+            target="_blank"
           >
-            <img
-              className="translate-x-3 translate-y-4 h-8 w-8 z-0"
-              src="https://img.icons8.com/ios-glyphs/28/000000/twitter--v2.png"
-              alt="twitter"
-            />
-            <div className="flex justify-center pt-5">
+            <SiTwitter className="translate-x-3 translate-y-4 h-8 w-8 z-0 text-black"/>
+            <div className="flex justify-center pt-4 text-xl tracking-normal text-black font-roboto font-bold">
               Join our twitter
             </div>
             <div></div>
@@ -30,15 +29,12 @@ export default function Intro() {
         <div className="flex">
           <a
             href="https://discord.gg/x3SFme3kH5"
-            className="flex justify-between border-2 shadow shadow-white rounded-md inset-x-36 sm:mt-0 mt-10 sm:mx-0 mx-auto w-60 h-16"
+            className="flex justify-between border-2 shadow-sm shadow-white rounded-md sm:mt-0 mt-10 sm:mx-0 mx-auto w-60 h-16 bg-gray-200"
+            target="_blank"
           >
-            <img
-              className="translate-x-3 translate-y-4 h-8 w-8 z-0" 
-              src="https://img.icons8.com/ios-filled/28/000000/discord--v2.png"
-              alt="discord"
-            />
-            <div className="flex justify-center pt-5">
-              Join our twitter
+            <SiDiscord className="translate-x-3 translate-y-4 h-8 w-8 z-0 text-black"/>
+            <div className="flex justify-center pt-4 text-xl tracking-normal text-black font-roboto font-bold">
+              Join our discord
             </div>
             <div></div>
           </a>

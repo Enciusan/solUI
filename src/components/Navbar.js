@@ -96,8 +96,11 @@ export default function Navbar() {
                         stroke="currentColor"
                       >
                         <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        
                       </svg>
+                      
                     </button>
+                    
                   </div>
 
                   <Transition
@@ -108,7 +111,7 @@ export default function Navbar() {
                     leave="transition ease-in duration-150"
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
-                    className="fixed right-0 top-0 bottom-0 left-0 bg-neutral-800 text-center bg-opacity-95 origin-top-right z-10"
+                    className="fixed right-0 top-0 bottom-0 left-0 bg-neutral-800 text-center origin-top-right z-10"
                     onClick={() => setIsVisible(!isVisible)}
                   >
                     <ul >

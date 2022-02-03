@@ -9,6 +9,10 @@ import Spacing from "./components/Spacing";
 import BackTopButton from "./components/BackTopButton";
 import Intro from "./components/Intro";
 import Team from "./components/Team";
+import Gallery from "./components/Gallery";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Footer from "./components/Footer";
+import FAQ from "./components/FAQ";
 
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -27,9 +31,6 @@ import {
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { ThemeProvider, createTheme, Slider } from "@material-ui/core";
-import Gallery from "./components/Gallery";
-import Footer from "./components/Footer";
-import FAQ from "./components/FAQ";
 
 const theme = createTheme({
   palette: {
@@ -83,7 +84,7 @@ const App = () => {
           <Gallery />
           <Spacing />
           <Team />
-          {/* <Spacing /> */}
+          <Spacing />
           <FAQ />
           <Spacing />
           <Footer />

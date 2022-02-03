@@ -5,7 +5,7 @@ import "../App.css";
 
 export default function FAQ() {
   return (
-    <div className="sm:w-full px-4 pt-8" id="faq">
+    <div className="sm:w-full px-4 " id="faq">
       <div className="flex justify-center md:mb-16 my-6 text-white sm:text-7xl text-5xl font-pirata text-center">
         FAQ
       </div>

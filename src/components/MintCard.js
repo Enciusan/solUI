@@ -3,8 +3,8 @@ import "../App.css";
 
 export default function MintCard() {
     return (
-        <div className="sm:w-full w-full sm:h-full lg:mx-auto  px-8 rounded-3xl" id="mint">
-            <h2 className="text-white lg:text-7xl text-5xl font-pirata text-center pt-10">
+        <div className="sm:w-full w-full sm:h-full lg:mx-auto px-8 rounded-3xl" id="mint">
+            <h2 className="text-white lg:text-7xl text-5xl font-pirata text-center ">
                 MINT
             </h2>
             <div className="grid sm:grid-cols-2 grid-cols-1">
@@ -15,19 +15,19 @@ export default function MintCard() {
                 />
                 <div className="flex flex-col w-full h-full justify-center mt-14">
                     <div className="flex flex-row text-white sm:text-4xl text-2xl ml-10 font-germania text-start">
-                        Date:
+                        Date
                         <div className="w-full px-10 h-full text-start pt-1 sm:text-2xl text-lg font-germania">
                             The mint date it will gonna be announce stay tunned.
                         </div>
                     </div>
                     <div className="flex flex-row text-white sm:text-4xl text-2xl ml-10 mt-20 font-germania text-start">
-                        Price:
+                        Price
                         <div className="w-full px-10 h-full text-start pt-1 sm:text-2xl text-lg font-germania">
                             Price will be 0.5 for Whitelist and 0.75 for public sale.
                         </div>
                     </div>
                     <div className="flex flex-row text-white sm:text-4xl text-2xl ml-10 mt-20 font-germania text-start">
-                        Where:
+                        Where
                         <div className="w-full px-10 h-full text-start pt-1 sm:text-2xl text-lg font-germania">
                             On mint day here it will appear a button for redirecting to the minting place.
                         </div>
