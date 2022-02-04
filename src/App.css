@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
 
 /*FONT ROBOTO*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .nav-underline {
   position: relative;
@@ -18,17 +18,37 @@ iframe {
   pointer-events: none;
 }
 
-.carousel .thumbs-wrapper img {
-  height: 100px;
+@media only screen and (min-width: 1025px) {
+  .carousel .thumbs-wrapper {
+    height: auto;
+    margin-left: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .carousel .thumbs-wrapper {
+    height: auto;
+    margin-left: auto !important;
+  }
+}
+
+#video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .carousel .slide img {
-  max-height: 850px;  /* change this to whatever you want */
-  width: 60%!important;
+  max-height: 850px; /* change this to whatever you want */
+  width: 60% !important;
 }
 
-.carousel button{
-  margin:auto;
+.carousel button {
+  margin: auto;
 }
 
 .nav-underline::before {
@@ -55,7 +75,7 @@ iframe {
   background-repeat: no-repeat;
 } */
 
-body:after {
+/* body:after {
   content:"";
   position: fixed;
   top: 0;
@@ -68,7 +88,7 @@ body:after {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
 .photo {
   background-image: url("./img/bogdan.png");
@@ -99,11 +119,10 @@ body:after {
 }
 
 .font-roboto {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .responsive {
   width: 100%;
   height: auto;
 }
-

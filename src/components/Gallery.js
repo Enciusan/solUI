@@ -5,9 +5,10 @@ import "../App.css";
 
 export default function Gallery() {
   return (
-    <div className="w-full">
+    <div className="container mx-auto">
+    <div className="sm:w-8/12 w-full mx-auto">
       <h2 className="text-white sm:text-7xl text-5xl font-pirata text-center pb-10">Gallery</h2>
-      <Carousel autoPlay infiniteLoop showThumbs={false}>
+      <Carousel autoPlay infiniteLoop showStatus={false}>
         <div>
           <img alt="" src="../img/cycle.jpeg" className="" />
         </div>
@@ -21,6 +22,7 @@ export default function Gallery() {
           <img alt="" src="../img/oreo.jpeg" />
         </div>
       </Carousel>
+    </div>
     </div>
   );
 }
