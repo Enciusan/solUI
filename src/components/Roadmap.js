@@ -18,7 +18,7 @@ export default function Roadmap() {
           <img
             class="block sm:hidden rounded-lg shadow-2xl shadow-black"
             src="../img/roadmap.jpg"
-            alt="road"
+            alt="roadmap"
           />
         </a>
       </div>
