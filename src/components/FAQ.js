@@ -9,11 +9,11 @@ export default function FAQ() {
       <div className="flex justify-center md:mb-16 my-6 text-white sm:text-7xl text-5xl font-pirata text-center">
         FAQ
       </div>
-      <div className="sm:w-5/12 p-2 mx-auto bg-[#192152] rounded-2xl">
+      <div className="sm:w-5/12 p-2 mx-auto bg-[#005650] rounded-2xl">
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-xl font-germania text-left text-white bg-[#192152] rounded-lg hover:bg-sky-700 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+              <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-xl font-germania text-left text-white bg-[#2ea297] rounded-lg hover:bg-sky-700 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                 <span>What is your refund policy?</span>
                 <ChevronUpIcon
                   className={`${
@@ -31,7 +31,7 @@ export default function FAQ() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-xl font-germania text-left text-white bg-[#192152] rounded-lg hover:bg-sky-700 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+              <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-xl font-germania text-left text-white bg-[#2ea297] rounded-lg hover:bg-sky-700 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                 <span>Do you offer technical support?</span>
                 <ChevronUpIcon
                   className={`${

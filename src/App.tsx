@@ -32,6 +32,7 @@ import {
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { ThemeProvider, createTheme, Slider } from "@material-ui/core";
 import Background from "./components/Background";
+import Roadmap from "./components/Roadmap";
 
 const theme = createTheme({
   palette: {
@@ -72,11 +73,11 @@ const App = () => {
   return (
     <>
       <div className="flex flex-col md:w-full md:h-full ">
-        <div className="bg-gradient-to-t from-[#192152] bg-fixed">
+        {/* <div className="bg-gradient-to-t from-[#192152] bg-fixed"> */}
           {/* <Background /> */}
           <div>
             <video autoPlay loop muted id="video">
-              <source src="../img/back.mp4" type="video/mp4" />
+              <source src="../img/newback.mp4" type="video/mp4" />
             </video>
           </div>
           <Navbar />
@@ -87,6 +88,8 @@ const App = () => {
           <BackTopButton />
           <Spacing />
           <MintCard />
+          <Spacing />
+          <Roadmap />
           <Spacing />
           <Gallery />
           <Spacing />
@@ -112,7 +115,7 @@ const App = () => {
             </ConnectionProvider>
           </ThemeProvider> */}
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 };
