@@ -1,7 +1,7 @@
 import "./App.css";
 import { useMemo, useState } from "react";
 
-import Minter from "./Minter";
+import Home from "./Home";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import MintCard from "./components/MintCard";
@@ -13,6 +13,9 @@ import Gallery from "./components/Gallery";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
+import { Route, Routes, Link } from "react-router-dom";
+import Roadmap from "./components/Roadmap";
+import Mint from "./pages/mint";
 
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -32,7 +35,6 @@ import {
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { ThemeProvider, createTheme, Slider } from "@material-ui/core";
 import Background from "./components/Background";
-import Roadmap from "./components/Roadmap";
 
 const theme = createTheme({
   palette: {
@@ -73,37 +75,40 @@ const App = () => {
   return (
     <>
       <div className="flex flex-col md:w-full md:h-full ">
-        {/* <div className="bg-gradient-to-t from-[#192152] bg-fixed"> */}
-          {/* <Background /> */}
-          <div>
-            <video autoPlay loop muted id="video">
-              <source src="../img/newback.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <Navbar />
-          <Spacing />
-          <Intro />
-          <Spacing />
-          <About />
-          <BackTopButton />
-          <Spacing />
-          <MintCard />
-          <Spacing />
-          <Roadmap />
-          <Spacing />
-          <Gallery />
-          <Spacing />
-          <Team />
-          <Spacing />
-          <FAQ />
-          <Spacing />
-          <Footer />
+        {/* <Routes>
+          <Route path="/Mint">
+            <Mint />
+          </Route>
+        </Routes> */}
+        <div>
+          <video playsInline autoPlay muted loop id="video">
+            <source src="../img/newback.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <Navbar />
+        <Spacing />
+        <Intro />
+        <Spacing />
+        <About />
+        <BackTopButton />
+        <Spacing />
+        <MintCard />
+        <Spacing />
+        <Roadmap />
+        <Spacing />
+        <Gallery />
+        <Spacing />
+        <Team />
+        <Spacing />
+        <FAQ />
+        <Spacing />
+        <Footer />
 
-          {/* <ThemeProvider theme={theme}>
+        {/* <ThemeProvider theme={theme}>
             <ConnectionProvider endpoint={endpoint}>
               <WalletProvider wallets={wallets} autoConnect>
                 <WalletDialogProvider>
-                  <Minter
+                  <Home
                     candyMachineId={candyMachineId}
                     connection={connection}
                     startDate={startDateSeed}
@@ -114,7 +119,7 @@ const App = () => {
               </WalletProvider>
             </ConnectionProvider>
           </ThemeProvider> */}
-        </div>
+      </div>
       {/* </div> */}
     </>
   );

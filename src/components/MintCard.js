@@ -1,3 +1,7 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Mint from '../pages/mint';
+
 import "../App.css";
 
 
@@ -13,24 +17,25 @@ export default function MintCard() {
                     src="../img/final2.jpeg"
                     alt="fox"
                 />
-                <div className="flex flex-col w-full h-full justify-center mt-14">
-                    <div className="flex flex-row text-white sm:text-4xl text-2xl ml-10 font-germania text-start">
+                <div className="flex flex-col w-full h-full justify-center mt-5">
+                    <div className="flex flex-col text-white sm:text-4xl text-2xl ml-10 font-germania text-start">
                         Date
-                        <div className="w-full px-10 h-full text-start pt-1 sm:text-2xl text-lg font-germania">
-                            The mint date it will gonna be announce stay tunned.
+                        <div className="flex w-full px-10 h-full text-start pt-3 sm:text-2xl text-lg font-germania">
+                        Stay tuned. The mint date will be announced SOON.
                         </div>
                     </div>
-                    <div className="flex flex-row text-white sm:text-4xl text-2xl ml-10 mt-20 font-germania text-start">
+                    <div className="flex flex-col text-white sm:text-4xl text-2xl ml-10 mt-20 font-germania text-start">
                         Price
-                        <div className="w-full px-10 h-full text-start pt-1 sm:text-2xl text-lg font-germania">
-                            Price will be 0.5 for Whitelist and 0.75 for public sale.
+                        <div className="w-full px-10 h-full text-start pt-3 sm:text-2xl text-lg font-germania">
+                            Price will be 1 SOL for Whitelist and 1.25 SOL for public sale.
                         </div>
                     </div>
-                    <div className="flex flex-row text-white sm:text-4xl text-2xl ml-10 mt-20 font-germania text-start">
+                    <div className="flex flex-col align-start text-white sm:text-4xl text-2xl ml-10 mt-20 font-germania text-start">
                         Where
-                        <div className="w-full px-10 h-full text-start pt-1 sm:text-2xl text-lg font-germania">
-                            On mint day here it will appear a button for redirecting to the minting place.
+                        <div className="flex sm:w-3/4 w-full px-10 h-full text-start pt-3 sm:text-2xl text-lg font-germania">This will be the button that will redirect to the mint page on the mint date.
+                            {/* <Link href='/Mint'>Mint</Link> */}  
                         </div>
+                        <button className="h-10 w-2/4 border-[#2ea297] rounded-md border-md bg-[#2ea297] bg-opacity-50 hover:bg-opacity-100 ml mt-2" disabled>Mint</button>
                     </div>
                 </div>
             </div>

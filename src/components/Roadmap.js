@@ -10,13 +10,13 @@ export default function Roadmap() {
       </h2>
       <div className="pt-10 lg:mx-7 ">
         <img
-          class="sm:block hidden rounded-lg shadow-2xl shadow-black"
+          className="sm:block hidden rounded-lg shadow-2xl shadow-black"
           src="../img/roadmap.jpg"
           alt="road"
         />
         <a href="http://localhost:3000/img/roadmap.jpg" target="_blank">
           <img
-            class="block sm:hidden rounded-lg shadow-2xl shadow-black"
+            className="block sm:hidden rounded-lg shadow-2xl shadow-black"
             src="../img/roadmap.jpg"
             alt="roadmap"
           />
