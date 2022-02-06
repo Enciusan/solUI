@@ -6,7 +6,7 @@ import "../App.css";
 export default function Gallery() {
   return (
     <div className="container mx-auto">
-    <div className="sm:w-8/12 w-full mx-auto">
+    <div className="sm:w-9/12 w-full mx-auto">
       <h2 className="text-white sm:text-7xl text-5xl font-pirata text-center pb-10">GALLERY</h2>
       <Carousel autoPlay infiniteLoop showStatus={false}>
         <div>
