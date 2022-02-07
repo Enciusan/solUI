@@ -81,7 +81,7 @@ const App = () => {
           </Route>
         </Routes> */}
         <div>
-          <video playsInline autoPlay muted loop id="video">
+          <video autoPlay muted loop id="video">
             <source src="../img/newback.mp4" type="video/mp4" />
           </video>
         </div>
