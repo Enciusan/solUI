@@ -33,7 +33,7 @@ iframe {
 }
 
 #video {
-  /* content:""; */
+  content:"";
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -41,10 +41,11 @@ iframe {
   top: 0;
   left: 0;
   z-index: -1;
-  /* -webkit-background-size: cover;
+  background: white;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; */
+  background-size: cover;
 }
 
 .carousel .slide img {
