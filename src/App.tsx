@@ -75,16 +75,7 @@ const App = () => {
   return (
     <>
       <div className="flex flex-col md:w-full md:h-full ">
-        {/* <Routes>
-          <Route path="/Mint">
-            <Mint />
-          </Route>
-        </Routes> */}
-        <div>
-          <video autoPlay muted loop id="video">
-            <source src="../img/newback.mp4" type="video/mp4" />
-          </video>
-        </div>
+        
         <Navbar />
         <Spacing />
         <Intro />

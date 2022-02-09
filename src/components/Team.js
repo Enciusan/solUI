@@ -6,9 +6,9 @@ export default function Team() {
     <div className="sm:mx-auto py-4 rounded-3xl sm:w-6/12 w-full sm:h-full h-full" id="team">
       <h2 className="text-white sm:text-7xl text-5xl font-pirata text-center">Team</h2>      
       <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-10 justify-items-center pt-20 sm:mx-0 mx-20">        
-        <div className="sm:w-60 w-full sm:h-60 h-full border-2 rounded-lg bg-gradient-to-t from-[#005650]">
+        <div className="sm:w-60 w-full sm:h-60 h-full border-2 border-[#2ea297] rounded-lg bg-gradient-to-t from-[#005650]">
           <img
-            className="shadow-md shadow-white rounded-md"
+            className="shadow-md shadow-[#2ea297] rounded-md"
             src="../img/cycle.jpeg"
             alt="bobi"
           />
@@ -27,9 +27,9 @@ export default function Team() {
           </div>
         </div>
 
-        <div className="sm:w-60 w-full sm:h-60 h-full border-2 rounded-lg bg-gradient-to-t from-[#005650] ">
+        <div className="sm:w-60 w-full sm:h-60 h-full border-2 border-[#2ea297] rounded-lg bg-gradient-to-t from-[#005650] ">
           <img
-            className="shadow-md shadow-white rounded-md"
+            className="shadow-lg shadow-[#2ea297] rounded-md"
             src="../img/enq.jpeg"
             alt="enq"
           />

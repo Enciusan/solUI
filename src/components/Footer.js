@@ -10,10 +10,6 @@ export default function Footer() {
           className="w-40 h-16"
           target="_blank"
         >
-          {/* <img
-            src="../img/twitter.png"
-            alt="twitter"
-          /> */}
           <SiTwitter className="h-12 w-12" />
         </a>
         <a
@@ -21,11 +17,6 @@ export default function Footer() {
           className="w-10 h-16"
           target="_blank"
         >
-          {/* <img
-            src="../img/discord.png"
-            alt="discord"
-          /> */}
-
           <SiDiscord className="h-12 w-12" />
         </a>
       </div>
