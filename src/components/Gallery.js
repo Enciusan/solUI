@@ -10,16 +10,16 @@ export default function Gallery() {
       <h2 className="text-white sm:text-7xl text-5xl font-pirata text-center pb-10">GALLERY</h2>
       <Carousel autoPlay infiniteLoop showStatus={false}>
         <div>
-          <img alt="" src="../img/cycle.jpeg" className="" />
+          <img alt="" src="../img/enq.jpeg" className="h-auto w-auto"/>
         </div>
         <div>
-          <img alt="" src="../img/enq.jpeg" />
+          <img alt="" src="../img/enq.jpeg" className="h-auto w-auto"/>
         </div>
         <div>
-          <img alt="" src="../img/final2.jpeg" />
+          <img alt="" src="../img/oreo.jpeg" className="h-auto w-auto"/>
         </div>
         <div>
-          <img alt="" src="../img/oreo.jpeg" />
+          <img alt="" src="../img/oreo.jpeg" className="h-auto w-auto"/>
         </div>
       </Carousel>
     </div>

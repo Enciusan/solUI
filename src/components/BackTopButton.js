@@ -21,7 +21,7 @@ export default function BackTopButton() {
                   <p>t</p>
                   <p>o</p>
                 </div>
-                <p className="text-neutral-900"> - </p>
+                <p className="text-[#192152]"> - </p>
                 <div className="text-white text-sm font-germania">
                   <p>t</p>
                   <p>o</p>

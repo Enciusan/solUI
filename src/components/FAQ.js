@@ -95,6 +95,7 @@ export default function FAQ() {
             </>
           )}
         </Disclosure>
+        
       </div>
     </div>
   );

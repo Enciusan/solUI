@@ -35,6 +35,7 @@ import {
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { ThemeProvider, createTheme, Slider } from "@material-ui/core";
 import Background from "./components/Background";
+import { SiLinkedin, SiTwitter } from "react-icons/si";
 
 const theme = createTheme({
   palette: {
@@ -75,7 +76,6 @@ const App = () => {
   return (
     <>
       <div className="flex flex-col md:w-full md:h-full ">
-        
         <Navbar />
         <Spacing />
         <Intro />
