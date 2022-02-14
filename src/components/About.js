@@ -6,7 +6,7 @@ export default function About() {
       <div className="text-white rounded-l-lg pb-10">        
         <h2 className="sm:text-7xl text-5xl font-pirata text-center mb-10">ABOUT</h2>
         <p className="flex justify-center mt-2 font-germania sm:text-2xl text-lg w-3/4 text-start mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel
+          Lorem ipsumaa dolor sit amet, consectetur adipiscing elit. Mauris vel
           dolor sed tortor viverra convallis. Mauris blandit sed nibh at
           viverra. Integer eros felis, ultricies nec ex ac, ultricies mollis
           neque. Nunc eu ex nec lacus mattis sagittis eu at ex. Suspendisse a
