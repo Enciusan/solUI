@@ -30,7 +30,7 @@ export default function MintCard() {
           <div className="flex flex-col text-white sm:text-4xl text-2xl ml-10 mt-20 font-germania text-start">
             Price
             <div className="w-full px-2 h-full text-start pt-3 sm:text-2xl text-lg font-germania">
-              Price will be 1 SOL for Whitelist and 1.25 SOL for public sale.
+              TBA
             </div>
           </div>
           <div className="flex flex-col text-white sm:text-4xl text-2xl ml-10 mt-20 font-germania text-start">

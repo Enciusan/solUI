@@ -9,7 +9,7 @@ export default function Team() {
         <div className="sm:w-60 w-full h-full border-2 border-[#2ea297] shadow-md shadow-[#2ea297] rounded-lg bg-gradient-to-t from-[#005650]">
           <img
             className="shadow-lg shadow-[#2ea297] rounded-md"
-            src="../img/cycle.jpeg"
+            src="../img/1.jpg"
             alt="bobi"
           />
           <h1 className="text-white sm:text-4xl text-2xl font-germania text-center pt-10">
@@ -30,7 +30,7 @@ export default function Team() {
         <div className="sm:w-60 w-full h-full border-2 border-[#2ea297] shadow-md shadow-[#2ea297] rounded-lg bg-gradient-to-t from-[#005650] ">
           <img
             className="shadow-lg shadow-[#2ea297] rounded-md"
-            src="../img/enq.jpeg"
+            src="../img/2.jpg"
             alt="enq"
           />
           <h1 className="text-white sm:text-4xl text-2xl font-germania text-center pt-10">

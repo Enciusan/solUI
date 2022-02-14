@@ -26,7 +26,7 @@ img {
 @media only screen and (min-width: 1025px) {
   .carousel .thumbs-wrapper {
     height: auto;
-    margin-left: 200px !important;
+    margin-left: 80px !important;
   }
 }
 
@@ -61,6 +61,7 @@ img {
 .carousel button {
   margin: auto;
 }
+
 
 .nav-underline::before {
   content: "";
@@ -101,9 +102,9 @@ img {
   background-size: cover;
 } */
 
-.photo {
+/* .photo {
   background-image: url("./img/bogdan.png");
-}
+} */
 
 * {
   scroll-behavior: smooth !important;

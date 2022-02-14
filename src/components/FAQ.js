@@ -73,7 +73,7 @@ export default function FAQ() {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-lg font-germania text-white">
-                For a whitelist role it'll be 1 SOL and for public sale 1.25 SOL.
+                TBA
               </Disclosure.Panel>
             </>
           )}
@@ -90,7 +90,7 @@ export default function FAQ() {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-lg font-germania text-white">
-                There will be 2222 unique *male* foxes looking for their owner.
+                There will be 2555 unique *male* foxes looking for their owner.
               </Disclosure.Panel>
             </>
           )}
