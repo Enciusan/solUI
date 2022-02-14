@@ -3,10 +3,15 @@ import "../App.css";
 
 export default function Intro() {
   return (
-    <div className="grid grid-cols-2 w-full h-max text-white rounded-l-lg font-germania sm:pr-20 pr-0">
+    <div className="grid grid-cols-3 w-full h-max text-white rounded-l-lg font-germania sm:pr-20 pr-0">
       <img
-        className="xl:flex hidden w-7/12 ml-20 rounded-[90px] "
+        className="xl:flex hidden w-8/12 ml-60 rounded-[90px] "
         src="../img/5 fb1.png"
+        alt="fox"
+      />
+      <img
+        className="xl:flex hidden w-8/12 rounded-[90px] "
+        src="../img/8fb1.png"
         alt="fox"
       />
       <div className="pt-40">
