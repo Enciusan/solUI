@@ -3,9 +3,9 @@ import "../App.css";
 
 export default function Intro() {
   return (
-    <div className="grid grid-cols-3 w-full h-max text-white rounded-l-lg font-germania sm:pr-20 pr-0">
+    <div className="md:grid md:grid-cols-3 w-full h-max text-white rounded-l-lg font-germania sm:pr-20 pr-0">
       <img
-        className="xl:flex hidden w-8/12 ml-60 rounded-[90px] "
+        className="xl:flex hidden w-8/12 ml-40 rounded-[90px] "
         src="../img/5 fb1.png"
         alt="fox"
       />
@@ -14,7 +14,7 @@ export default function Intro() {
         src="../img/8fb1.png"
         alt="fox"
       />
-      <div className="pt-40">
+      <div className="pt-20">
         <div className="flex flex-column sm:justify-end justify-center sm:pr-6 pl-0 text-3xl">
           WELCOME TO THE
         </div>

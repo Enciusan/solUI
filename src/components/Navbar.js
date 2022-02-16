@@ -4,7 +4,7 @@ import { Transition } from "@tailwindui/react";
 import "../App.css";
 
 const navigation = [
-  { name: "About", href: "#about", current: true },
+  { name: "Story", href: "#story", current: false },
   { name: "Minting", href: "#mint", current: false },
   { name: "Roadmap", href: "#roadmap", current: false },
 ];
@@ -139,7 +139,7 @@ export default function Navbar() {
                           href="#about"
                           className="block text-4xl px-2 py-7 text-white font-pirata"
                         >
-                          About
+                          Story
                         </a>
                       </li>
                       <li className="text-lg font-pirata">
