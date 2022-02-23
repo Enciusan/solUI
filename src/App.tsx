@@ -74,7 +74,7 @@ const App = () => {
   // const mystyle = {background-image: url('./img/bgpattern.jpg')} as React.CSSProperties;
 
   return (
-    <>
+    <div>
       <div className="w-full h-full bg-[#a6b9fe]">
       <div className="flex flex-col md:w-full md:h-full ">
         <Navbar />
@@ -113,7 +113,7 @@ const App = () => {
           </ThemeProvider> */}
       </div>
       </div>
-    </>
+    </div>
   );
 };
 
