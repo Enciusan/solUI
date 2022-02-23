@@ -135,7 +135,6 @@ export default function About() {
             </SmoothList>
           {/* )} */}
 
-          {/* {offset >= 1200 && ( */}
             <SmoothList>
               <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
               &nbsp;&nbsp;&nbsp;The foxes celebrated! They have won this battle, but would there
@@ -144,7 +143,6 @@ export default function About() {
                 the North Pole doesn&rsquo;t just belong to humans!
               </div>
             </SmoothList>
-          {/* )} */}
 
         </div>
         <div className="md:hidden flex justify-center mt-10">
