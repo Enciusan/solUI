@@ -18,17 +18,16 @@ export default function About() {
 
   return (
     <div
-      className="flex justify-center w-3/4 h-full bg-[#005650] rounded-3xl bg-opacity-25 mx-auto"
+      className="flex justify-center w-3/4 h-full bg-gradient-to-b from-[#a2cee8] to-[#a6b9fe] rounded-3xl bg-opacity-25 mx-auto"
       id="story"
     >
       <div className="text-white pb-10 ">
-        <h2 className="sm:text-7xl text-5xl font-pirata text-center pt-20">
+        <h2 className="sm:text-7xl text-5xl font-pirata text-center pt-10">
           STORY
         </h2>
-        {offset >= 740 && (
-          <SmoothList delay={100}>
-            <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto mt-12">
-              The wind blew the powdery fresh snow across the open white field
+          <SmoothList >
+            <div className="flex justify-start mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto mt-12">
+            &nbsp;&nbsp;&nbsp;The wind blew the powdery fresh snow across the open white field
               of the North Pole as Sai watched for signs of approaching
               predators. His hair rustled as the crisp air picked up and changed
               direction, bringing the scent of humans into his nose. They are
@@ -36,12 +35,11 @@ export default function About() {
               others.
             </div>
           </SmoothList>
-        )}
 
-        {offset >= 740 && (
-          <SmoothList delay={200}>
+        {/* {offset >= 740 && ( */}
+          <SmoothList >
             <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
-              His den rests at the base of a cliff with a large series of snow
+            &nbsp;&nbsp;&nbsp;His den rests at the base of a cliff with a large series of snow
               covered rocks to hide the entrance. We should be safe&hellip;
               Sai&rsquo;s family consists of Mae, his partner, their two
               pups,Tiki and Pon. Sai knows of several other fox family dens
@@ -49,24 +47,24 @@ export default function About() {
               he hunts with a few of the other males when prey is hard to find.
             </div>
           </SmoothList>
-        )}
+        {/* )} */}
 
-        {offset >= 740 && (
-          <SmoothList delay={300}>
+        {/* {offset >= 740 && ( */}
+          <SmoothList >
             <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
-              &ldquo;Man is near. I must tell the others.&rdquo; Sai informs Mae
+            &nbsp;&nbsp;&nbsp;&ldquo;Man is near. I must tell the others.&rdquo; Sai informs Mae
               as he leaves again, her and the pups whining with worry. Many
               arctic foxes have been hunted and killed in the last few weeks,
               leading the families to be on high alert.
             </div>
           </SmoothList>
-        )}
+        {/* )} */}
 
-        <div className={isCollapsed && "md:grid hidden"}>
-          {offset >= 1000 && (
-            <SmoothList delay={400}>
+        {/* <div className={isCollapsed && "md:grid hidden"}> */}
+          {/* {offset >= 1000 && ( */}
+            <SmoothList>
               <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
-                The wind has died down, no longer whipping snow into Sai&rsquo;s
+              &nbsp;&nbsp;&nbsp;The wind has died down, no longer whipping snow into Sai&rsquo;s
                 eyes. The view is clear and he spots several dark figures in the
                 distance, slowly growing closer. Undoubtedly Man. Hunters of
                 their kind. Killing them for their fur, reducing their numbers
@@ -74,35 +72,35 @@ export default function About() {
                 foxes, knowing this is their only chance for survival.
               </div>
             </SmoothList>
-          )}
+          {/* )} */}
 
-          {offset >= 1000 && (
-            <SmoothList delay={500}>
+          {/* {offset >= 1000 && ( */}
+            <SmoothList>
               <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
-                The foxes know the land best and they blend in with the snow and
+              &nbsp;&nbsp;&nbsp;The foxes know the land best and they blend in with the snow and
                 the rocks easily. They&rsquo;re ready and they have their
                 numbers. Sai and the others decide together their strategy of
                 attack. The humans were smart too and had weapons and nets,
                 meaning the foxes must be careful.
               </div>
             </SmoothList>
-          )}
+          {/* )} */}
 
-          {offset >= 1000 && (
-            <SmoothList delay={500}>
+          {/* {offset >= 1000 && ( */}
+            <SmoothList >
               <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
-                They hid, males, females, old and adolescent, all of them
+              &nbsp;&nbsp;&nbsp;They hid, males, females, old and adolescent, all of them
                 prepared and in position. Some dug holes and stayed below the
                 snow, others hid in caves or behind rocks. The humans would
                 never expect such a strategic maneuver.
               </div>
             </SmoothList>
-          )}
+          {/* )} */}
 
-          {offset >= 1200 && (
-            <SmoothList delay={600}>
+          {/* {offset >= 1200 && ( */}
+            <SmoothList >
               <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
-                The wind changed again, bringing the scent of human their
+              &nbsp;&nbsp;&nbsp;The wind changed again, bringing the scent of human their
                 direction again. This time much stronger than before.
                 They&rsquo;re getting close. The sound of their boots crunching
                 the snow as they walked across the open plain towards the foxes
@@ -110,12 +108,12 @@ export default function About() {
                 foxes would attack.
               </div>
             </SmoothList>
-          )}
+          {/* )} */}
 
-          {offset >= 1200 && (
-            <SmoothList delay={700}>
+          {/* {offset >= 1200 && ( */}
+            <SmoothList >
               <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
-                When the moment came, the others were scared. No one moved. Sai
+              &nbsp;&nbsp;&nbsp;When the moment came, the others were scared. No one moved. Sai
                 knew he had to be the first, so he leaped out of the snow and
                 latched onto the thick gloves on the nearest man&rsquo;s hand.
                 He yells out, grabbing Sai by the scruff. He thought he was
@@ -124,29 +122,29 @@ export default function About() {
                 the hunters.
               </div>
             </SmoothList>
-          )}
+          {/* )} */}
 
-          {offset >= 1200 && (
-            <SmoothList delay={800}>
+          {/* {offset >= 1200 && ( */}
+            <SmoothList>
               <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
-                The men were dancing and jumping around frantically, screaming
+              &nbsp;&nbsp;&nbsp;The men were dancing and jumping around frantically, screaming
                 at the foxes and each other. Unsure of what to do, they did what
                 seemed best and ran, quickly disappearing from sight as the snow
                 swallowed them up.
               </div>
             </SmoothList>
-          )}
+          {/* )} */}
 
-          {offset >= 1200 && (
-            <SmoothList delay={900}>
+          {/* {offset >= 1200 && ( */}
+            <SmoothList>
               <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
-                The foxes celebrated! They have won this battle, but would there
+              &nbsp;&nbsp;&nbsp;The foxes celebrated! They have won this battle, but would there
                 be a war? Sai and his band of arctic soldiers will be prepared
                 for the next time that any man decides to hunt them. After all,
                 the North Pole doesn&rsquo;t just belong to humans!
               </div>
             </SmoothList>
-          )}
+          {/* )} */}
 
         </div>
         <div className="md:hidden flex justify-center mt-10">
@@ -167,6 +165,6 @@ export default function About() {
           )}
         </div>
       </div>
-    </div>
+    // </div>
   );
 }

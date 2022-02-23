@@ -3,26 +3,32 @@ import "../App.css";
 
 export default function Intro() {
   return (
-    <div className="md:grid md:grid-cols-3 w-full h-max text-white rounded-l-lg font-germania sm:pr-20 pr-0">
-      <img
-        className="xl:flex hidden w-8/12 ml-40 rounded-[90px] "
-        src="../img/5 fb1.png"
-        alt="fox"
-      />
-      <img
-        className="xl:flex hidden w-8/12 rounded-[90px] "
-        src="../img/8fb1.png"
-        alt="fox"
-      />
-      <div className="pt-20">
-        <div className="flex flex-column sm:justify-end justify-center sm:pr-6 pl-0 text-3xl">
+    <div className="md:grid md:grid-cols-1 w-full h-max text-white rounded-l-lg font-germania md:ml-10">
+      {/* <picture>
+        <source srcSet="../img/5-fb1.webp" type="image/webp" />
+        <img
+          className="xl:flex hidden w-8/12 ml-40 rounded-[90px] "
+          src="../img/5 fb1.png"
+          alt="fox"
+        />
+      </picture> */}
+      {/* <picture>
+        <source srcSet="../img/5-fb1.webp" type="image/webp" /> */}
+        {/* <img
+          className="xl:flex hidden w-8/12 rounded-[90px] "
+          src="../img/8fb1.png"
+          alt="fox"
+        /> */}
+      {/* </picture> */}
+      <div className="pt-14">
+        <div className="flex flex-column sm:justify-center justify-center sm:text-5xl text-3xl">
           WELCOME TO THE
         </div>
-        <div className="flex sm:justify-end justify-center pt-2 sm:pl-0 pl-0 sm:text-5xl text-4xl">
+        <div className="flex sm:justify-center justify-center pt-2 sm:text-7xl text-4xl">
           NONAME FOXESCLUB
         </div>
-        <div className="flex sm:flex-row flex-col sm:justify-end justify-center mt-14">
-          <div className="flex flex-row sm:px-5 px-3">
+        <div className="flex sm:flex-row flex-col sm:justify-center justify-center mt-2 pr-7">
+          <div className="flex flex-row px-8">
             <a
               href="https://twitter.com/NNFoxesclub"
               className="flex justify-between border-2 shadow-sm shadow-gray-200 rounded-md sm:mt-0 mt-10 sm:mx-0 mx-auto w-60 h-16 bg-gray-200"

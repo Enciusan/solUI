@@ -14,7 +14,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
 import { Route, Routes, Link } from "react-router-dom";
-import Roadmap from "./components/Roadmap";
+import Roadmap2 from "./components/Roadmap2";
 import Mint from "./pages/mint";
 
 import * as anchor from "@project-serum/anchor";
@@ -75,6 +75,7 @@ const App = () => {
 
   return (
     <>
+      <div className="w-full h-full bg-[#a6b9fe]">
       <div className="flex flex-col md:w-full md:h-full ">
         <Navbar />
         <Spacing />
@@ -85,7 +86,7 @@ const App = () => {
         <Spacing />
         <MintCard />
         <Spacing />
-        <Roadmap />
+        <Roadmap2 />
         <Spacing />
         <Gallery />
         <Spacing />
@@ -111,7 +112,7 @@ const App = () => {
             </ConnectionProvider>
           </ThemeProvider> */}
       </div>
-      {/* </div> */}
+      </div>
     </>
   );
 };

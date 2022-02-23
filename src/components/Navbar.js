@@ -25,7 +25,7 @@ export default function Navbar() {
       <Disclosure as="nav" className=" md:w-full w-screen" id="nav">
         {({ open }) => (
           <>
-            <div className="md:px-8 px-auto flex">
+            <div className="px-auto flex">
               <div className="h-full w-full">
                 <div className="flex justify-center">
                   <div className="hidden sm:flex md:w-max w-8/12">

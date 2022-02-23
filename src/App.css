@@ -23,45 +23,54 @@ img {
   height: auto;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1480px) {
   .carousel .thumbs-wrapper {
-    height: auto;
-    margin-left: 80px !important;
+    padding-left: 60px !important;
+  }
+}
+@media only screen and (min-width: 1650px) {
+  .carousel .thumbs-wrapper {
+    padding-left: 100px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .carousel .thumbs-wrapper {
+    padding-left: 140px !important;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .carousel .thumbs-wrapper {
+    padding-left: 180px !important;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .carousel .thumbs-wrapper {
+    padding-left: 200px !important;
   }
 }
 
-@media only screen and (max-width: 1023px) {
-  .carousel .thumbs-wrapper {
-    height: auto;
-    margin-left: auto !important;
-  }
-}
 
-#video {
-  /* content:""; */
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: white;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 
 .carousel .slide img {
-  max-height: 850px; /* change this to whatever you want */
+  max-height: 900px !important; /* change this to whatever you want */
   width: 60% !important;
+  border-radius: 15px;
 }
 
 .carousel button {
-  margin: auto;
+  margin: 10px;
 }
 
+/* @media only screen and (max-width: 1350px) {
+  .carousel .thumbs-wrapper {
+    padding-left: 100px !important;
+  }
+} */
+
+.carousel .thumb {
+  border: 1px solid #a2cee8 !important;
+}
 
 .nav-underline::before {
   content: "";
