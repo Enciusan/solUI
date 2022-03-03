@@ -27,7 +27,7 @@ export const Header = ({ candyMachine }: HeaderProps) => {
                   fontWeight: 'bold',
                 }}
               >
-                {`${candyMachine?.state.itemsRemaining}`}
+                {`${candyMachine?.state.itemsRemaining}`} / 1000
               </Typography>
             </Grid>
             <Grid container direction="column">
@@ -56,7 +56,7 @@ export const Header = ({ candyMachine }: HeaderProps) => {
           status={
             !candyMachine?.state?.isActive || candyMachine?.state?.isSoldOut
               ? 'COMPLETED'
-              : candyMachine?.state.whitelistMintSettings?.presale ?  'PRESALE' : 'LIVE'
+              : candyMachine?.state.whitelistMintSettings?.presale ?  'LIVE' : 'LIVE'
           }
         />
       </Grid>

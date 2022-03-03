@@ -16,7 +16,7 @@ export default function MintCard() {
 
   return (
     <div
-      className="flex justify-center w-3/4 h-full bg-gradient-to-b from-[#a2cee8] to-[#a6b9fe] rounded-3xl bg-opacity-25 mx-auto"
+      className="flex justify-center w-3/4 h-full bg-gradient-to-tr from-[#a6b9fe] via-[#b9b0e9] to-pink-300 rounded-3xl bg-opacity-25 mx-auto"
       id="mint"
     >
       <div>
@@ -45,11 +45,10 @@ export default function MintCard() {
               TBA
             </div>
           </div>
-          <div className="flex flex-col text-white sm:text-4xl text-2xl ml-10 mt-20 font-germania text-start">
+          <div className="flex flex-col text-white sm:text-4xl text-2xl ml-10 mt-20 font-germania text-start mb-10">
             Where
             <div className="flex w-full px-2 h-full text-start pt-3 sm:text-2xl text-lg font-germania">
-              {" "}
-              TBA
+              We are still discussing about where do we host our minting.
               {/* This will be the button that will redirect to the mint page on the mint date. */}
               {/* <Link href='/Mint'>Mint</Link> */}
             </div>

@@ -2,15 +2,16 @@ import { Fragment, useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Transition } from "@tailwindui/react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Story", href: "#story", current: false },
   { name: "Minting", href: "#mint", current: false },
   { name: "Roadmap", href: "#roadmap", current: false },
+  { name: "Gallery", href: "#gallery", current: false },
 ];
 const navigation1 = [
-  { name: "Gallery", href: "#gallery", current: false },
   { name: "Team", href: "#team", current: false },
+  { name: "Story", href: "#story", current: false },
   { name: "FAQ", href: "#faq", current: false },
 ];
 function classNames(...classes) {
@@ -26,10 +27,16 @@ export default function Navbar() {
         {({ open }) => (
           <>
             <div className="px-auto flex">
-              <div className="h-full w-full">
-                <div className="flex justify-center">
-                  <div className="hidden sm:flex md:w-max w-8/12">
+              <div className="h-full w-full">                
+                <div className="flex justify-center">                  
+                  <div className="hidden sm:flex md:w-max w-8/12">                    
                     <div className="flex items-center lg:space-x-4 space-x-1 font-pirata">
+                    <Link
+                        to="/mintUkr"
+                        className="flex justify-start w-full text-[#74acdf] lg:text-4xl px-3 py-2 rounded-md nav-underline "
+                      >
+                        Mint &nbsp; <p className="text-[#fcd116]">Ukraina</p>
+                      </Link>
                       {navigation.map((item) => (
                         <a
                           key={item.name}
@@ -96,11 +103,8 @@ export default function Navbar() {
                         stroke="currentColor"
                       >
                         <path d="M4 6h16M4 12h16M4 18h16"></path>
-                        
                       </svg>
-                      
                     </button>
-                    
                   </div>
 
                   <Transition
@@ -114,11 +118,9 @@ export default function Navbar() {
                     className="fixed right-0 top-0 bottom-0 left-0 bg-neutral-800 text-center origin-top-right z-10"
                     onClick={() => setIsVisible(!isVisible)}
                   >
-                    <ul >
+                    <ul>
                       <li className="text-lg font-pirata">
-                        <a
-                          className="block px-2 text-white font-pirata flex justify-end"
-                        >
+                        <a className="block px-2 text-white font-pirata flex justify-end">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-14 w-14 flex pt-6"
@@ -134,54 +136,55 @@ export default function Navbar() {
                         </a>
                       </li>
                       <div className="pt-10">
-                      <li className="text-lg font-pirata">
-                        <a
-                          href="#about"
-                          className="block text-4xl px-2 py-7 text-white font-pirata"
-                        >
-                          Story
-                        </a>
-                      </li>
-                      <li className="text-lg font-pirata">
-                        <a
-                          href="#mint"
-                          className="block text-4xl px-2 py-7 text-white font-pirata"
-                        >
-                          Minting
-                        </a>
-                      </li>
-                      <li className="text-lg font-pirata">
-                        <a
-                          href="#roadmap"
-                          className="block text-4xl px-2 py-7 text-white font-pirata"
-                        >
-                          Roadmap
-                        </a>
-                      </li>
-                      <li className="text-lg font-pirata">
-                        <a
-                          href="#gallery"
-                          className="block text-4xl px-2 py-7 text-white font-pirata"
-                        >
-                          Gallery
-                        </a>
-                      </li>
-                      <li className="text-lg font-pirata">
-                        <a
-                          href="#team"
-                          className="block text-4xl px-2 py-7 text-white font-pirata"
-                        >
-                          Team
-                        </a>
-                      </li>
-                      <li className="text-lg font-pirata">
-                        <a
-                          href="#faq"
-                          className="block text-4xl px-2 py-7 text-white font-pirata"
-                        >
-                          FAQ
-                        </a>
-                      </li>
+                        <li className="text-lg font-pirata">
+                          <a
+                            href="#mint"
+                            className="block text-4xl px-2 py-7 text-white font-pirata"
+                          >
+                            Minting
+                          </a>
+                        </li>
+                        <li className="text-lg font-pirata">
+                          <a
+                            href="#roadmap"
+                            className="block text-4xl px-2 py-7 text-white font-pirata"
+                          >
+                            Roadmap
+                          </a>
+                        </li>
+                        <li className="text-lg font-pirata">
+                          <a
+                            href="#gallery"
+                            className="block text-4xl px-2 py-7 text-white font-pirata"
+                          >
+                            Gallery
+                          </a>
+                        </li>
+                        <li className="text-lg font-pirata">
+                          <a
+                            href="#team"
+                            className="block text-4xl px-2 py-7 text-white font-pirata"
+                          >
+                            Team
+                          </a>
+                        </li>
+                        
+                        <li className="text-lg font-pirata">
+                          <a
+                            href="#about"
+                            className="block text-4xl px-2 py-7 text-white font-pirata"
+                          >
+                            Story
+                          </a>
+                        </li>
+                        <li className="text-lg font-pirata">
+                          <a
+                            href="#faq"
+                            className="block text-4xl px-2 py-7 text-white font-pirata"
+                          >
+                            FAQ
+                          </a>
+                        </li>
                       </div>
                     </ul>
                   </Transition>

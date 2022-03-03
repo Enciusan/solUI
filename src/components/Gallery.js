@@ -5,7 +5,7 @@ import "../App.css";
 
 export default function Gallery() {
   return (
-    <div className="flex justify-center w-3/4 h-full bg-gradient-to-b from-[#a2cee8] to-[#a6b9fe] rounded-3xl bg-opacity-25 mx-auto">
+    <div className="flex justify-center w-3/4 h-full bg-gradient-to-tr from-[#a6b9fe] via-[#b9b0e9] to-pink-300 rounded-3xl bg-opacity-25 mx-auto">
       <div className="container mx-auto" id="gallery">
         <div className="sm:w-9/12 w-full mx-auto">
           <h2 className="text-white sm:text-7xl text-5xl font-pirata text-center pb-10 pt-10">
@@ -16,13 +16,13 @@ export default function Gallery() {
               <img alt="" src="../img/1.jpg" className="h-auto w-auto" />
             </div>
             <div>
-              <img alt="" src="../img/2.jpg" className="h-auto w-auto" />
+              <img alt="" src="../img/Enciu.jpg" className="h-auto w-auto" />
             </div>
             <div>
-              <img alt="" src="../img/3.jpg" className="h-auto w-auto" />
+              <img alt="" src="../img/11.jpg" className="h-auto w-auto" />
             </div>
             <div>
-              <img alt="" src="../img/4.jpg" className="h-auto w-auto" />
+              <img alt="" src="../img/12.jpg" className="h-auto w-auto" />
             </div>
             <div>
               <img alt="" src="../img/5.jpg" className="h-auto w-auto" />

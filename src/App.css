@@ -72,6 +72,10 @@ img {
   border: 1px solid #a2cee8 !important;
 }
 
+.MuiButton-contained:hover {
+  background-color: #466988 !important;
+}
+
 .nav-underline::before {
   content: "";
   position: absolute;

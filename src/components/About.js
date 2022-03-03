@@ -18,7 +18,7 @@ export default function About() {
 
   return (
     <div
-      className="flex justify-center w-3/4 h-full bg-gradient-to-b from-[#a2cee8] to-[#a6b9fe] rounded-3xl bg-opacity-25 mx-auto"
+      className="flex justify-center w-3/4 h-full bg-gradient-to-tr from-[#a6b9fe] via-[#b9b0e9] to-pink-300 rounded-3xl opacity-90 mx-auto"
       id="story"
     >
       <div className="text-white pb-10 ">
@@ -60,7 +60,7 @@ export default function About() {
           </SmoothList>
         {/* )} */}
 
-        {/* <div className={isCollapsed && "md:grid hidden"}> */}
+        <div className={isCollapsed && "md:grid hidden"}>
           {/* {offset >= 1000 && ( */}
             <SmoothList>
               <div className="flex justify-center mt-2 font-germania sm:text-xl text-md w-8/12 text-start mx-auto">
@@ -148,14 +148,14 @@ export default function About() {
         <div className="md:hidden flex justify-center mt-10">
           {isCollapsed ? (
             <button
-              className="transition duration-500 transform px-6 py-2 m-4 inline bg-[#005650] bg-opacity-70 animate-bounce hover:bg-indigo-400 hover:border-yellow-500 hover:text-white hover:opacity-50 hover:shadow-md hover:scale-125"
+              className="transition duration-500 transform px-6 py-2 m-4 inline bg-[#a2cee8] bg-opacity-70 animate-bounce hover:bg-indigo-400 hover:border-yellow-500 hover:text-white hover:opacity-50 hover:shadow-md hover:scale-125"
               onClick={() => setIsCollapsed(!isCollapsed)}
             >
               <FiArrowDown />
             </button>
           ) : (
             <button
-              className="transition duration-500 transform px-6 py-2 m-4 inline bg-[#005650] bg-opacity-70 animate-bounce hover:bg-indigo-400 hover:border-yellow-500 hover:text-white hover:opacity-50 hover:shadow-md hover:scale-125"
+              className="transition duration-500 transform px-6 py-2 m-4 inline bg-[#a2cee8] bg-opacity-70 animate-bounce hover:bg-indigo-400 hover:border-yellow-500 hover:text-white hover:opacity-50 hover:shadow-md hover:scale-125"
               onClick={() => setIsCollapsed(!isCollapsed)}
             >
               <FiArrowUp />
@@ -163,6 +163,6 @@ export default function About() {
           )}
         </div>
       </div>
-    // </div>
+     </div>
   );
 }

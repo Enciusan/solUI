@@ -4,6 +4,7 @@ import "../App.css";
 export default function Intro() {
   return (
     <div className="md:grid md:grid-cols-1 w-full h-max text-white rounded-l-lg font-germania md:ml-10">
+      
       {/* <picture>
         <source srcSet="../img/5-fb1.webp" type="image/webp" />
         <img

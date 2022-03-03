@@ -1,21 +1,6 @@
-import "./App.css";
+import "../App.css";
 import { useMemo, useState } from "react";
-
-import Home from "./Home";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import MintCard from "./components/MintCard";
-import Spacing from "./components/Spacing";
-import BackTopButton from "./components/BackTopButton";
-import Intro from "./components/Intro";
-import Team from "./components/Team";
-import Gallery from "./components/Gallery";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Footer from "./components/Footer";
-import FAQ from "./components/FAQ";
-import { Route, Routes, Link, useLocation} from "react-router-dom";
-import Roadmap2 from "./components/Roadmap2";
-import Mint from "./pages/mint";
+import Home from "../Home";
 
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -54,14 +39,10 @@ const startDateSeed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
 
 const txTimeout = 30000; // milliseconds (confirm this works for your project)
 
-
-
-const App = () => {
+const Mint = () => {
   const endpoint = useMemo(() => clusterApiUrl(network), []);
 
   // const [isVisible, setIsVisible] = useState(false);
-
-  const location = useLocation();
 
   const wallets = useMemo(
     () => [
@@ -72,48 +53,31 @@ const App = () => {
     ],
     []
   );
-
-  // const mystyle = {background-image: url('./img/bgpattern.jpg')} as React.CSSProperties;
-
   return (
-    <div>
-      
-         { location.pathname == "/mintUkr" &&
-          <Routes>
-            <Route path="/mintUkr" element={<Mint />} />
-          </Routes>}
+    <div
+      className="w-full h-screen px-8 bg-gradient-to-l from-[#a6b9fe] via-[#b9b0e9] to-pink-300"
+      id="roadmap"
+    >
+      <h2 className="text-dark lg:text-7xl text-5xl font-pirata text-center pt-10">
+        MINT PAGE
+      </h2>
 
-      {location.pathname == "/" &&
-       <div className="w-full h-full bg-gradient-to-l from-[#a6b9fe] via-[#b9b0e9] to-pink-300">
-        <div className="flex flex-col md:w-full md:h-full ">        
-          <Navbar /> 
-          <Spacing /> 
-          <Intro /> 
-          <Spacing /> 
-          <BackTopButton /> 
-          <Spacing /> 
-          <MintCard /> 
-          <Spacing /> 
-          <Roadmap2 /> 
-          <Spacing /> 
-          <Gallery /> 
-          <Spacing /> 
-          <Team /> 
-          <Spacing /> 
-          <About /> 
-          <FAQ />  
-          <Spacing /> 
-          <Footer />          
+      <div className="grid grid-cols-2 pt-10">
+        <div className="w-3/4 pt-10 ">
+          <img className="rounded-xl" src="../img/ukr.jpg"></img>
         </div>
-      </div>}
-    </div>
-  );
-};
+        <div className="w-full h-full">
+          <div className="pt-10 text-xl font-mono font-bold">
+          &nbsp;&nbsp;&nbsp;Foxes, we never thought this moment would come … <br/>
+          &nbsp;&nbsp;&nbsp;In these difficult times, we have to unite and help in any way we can.<br/>
+          &nbsp;&nbsp;&nbsp;The NoName FoxesClub decided to help #Ukraine by having a public sale with this specific art.<br/>
+          &nbsp;&nbsp;&nbsp;All the money from the public sale will be donated to Ukraine using crypto. The screenshots will be posted shortly after.<br/>
+          &nbsp;&nbsp;&nbsp;Let&rsquo;s make the best out of this situation and help in any way we can.
 
-export default App;
 
-
-/* <ThemeProvider theme={theme}>
+Ukraine, the Nonamefoxes are with you!
+          </div>
+          <ThemeProvider theme={theme}>
             <ConnectionProvider endpoint={endpoint}>
               <WalletProvider wallets={wallets} autoConnect>
                 <WalletDialogProvider>
@@ -127,4 +91,11 @@ export default App;
                 </WalletDialogProvider>
               </WalletProvider>
             </ConnectionProvider>
-          </ThemeProvider> */
+          </ThemeProvider>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Mint;

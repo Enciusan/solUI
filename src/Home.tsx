@@ -26,7 +26,7 @@ const ConnectButton = styled(WalletDialogButton)`
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
+  background: linear-gradient(180deg, rgba(116,172,223,1) 29%, rgba(252,209,22,1) 71%);
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -165,10 +165,10 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (    
-    <Container style={{ marginTop: 100 }}>    
+    <Container maxWidth="lg" style={{ marginTop: 150}}>    
       <Container maxWidth="sm" style={{ position: 'relative' }}>
         <Paper
-          style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}
+          style={{ padding: 24, background: 'linear-gradient(180deg, rgba(116,172,223,1) 40%, rgba(252,209,22,1) 65%)', borderRadius: 6 }}
         >
           {!wallet.connected ? (
             <ConnectButton>Connect Wallet</ConnectButton>
