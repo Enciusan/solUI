@@ -72,10 +72,7 @@ const Mint = () => {
           &nbsp;&nbsp;&nbsp;In these difficult times, we have to unite and help in any way we can.<br/>
           &nbsp;&nbsp;&nbsp;The NoName FoxesClub decided to help #Ukraine by having a public sale with this specific art.<br/>
           &nbsp;&nbsp;&nbsp;All the money from the public sale will be donated to Ukraine using crypto. The screenshots will be posted shortly after.<br/>
-          &nbsp;&nbsp;&nbsp;Let&rsquo;s make the best out of this situation and help in any way we can.
-
-
-Ukraine, the Nonamefoxes are with you!
+          &nbsp;&nbsp;&nbsp;Let&rsquo;s make the best out of this situation and help in any way we can. Ukraine, the Noname FoxesClub are with you!
           </div>
           <ThemeProvider theme={theme}>
             <ConnectionProvider endpoint={endpoint}>

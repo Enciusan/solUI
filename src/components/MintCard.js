@@ -28,7 +28,7 @@ export default function MintCard() {
       <div className="grid xl:grid-cols-2 grid-cols-1">
         <img
           className="xl:flex hidden w-6/12 h-6/12 ml-20 md:my-28 my-60 rounded-lg"
-          src="../img/1fb1.png"
+          src="../img/Mint.png"
           alt="fox"
         />
         <div className="w-full h-full px-3 mt-5">

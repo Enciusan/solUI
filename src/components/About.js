@@ -148,14 +148,14 @@ export default function About() {
         <div className="md:hidden flex justify-center mt-10">
           {isCollapsed ? (
             <button
-              className="transition duration-500 transform px-6 py-2 m-4 inline bg-[#a2cee8] bg-opacity-70 animate-bounce hover:bg-indigo-400 hover:border-yellow-500 hover:text-white hover:opacity-50 hover:shadow-md hover:scale-125"
+              className="transition duration-500 transform px-6 py-2 m-4 inline bg-pink-300 bg-opacity-70 animate-bounce hover:bg-indigo-400 hover:border-yellow-500 hover:text-white hover:opacity-50 hover:shadow-md hover:scale-125"
               onClick={() => setIsCollapsed(!isCollapsed)}
             >
               <FiArrowDown />
             </button>
           ) : (
             <button
-              className="transition duration-500 transform px-6 py-2 m-4 inline bg-[#a2cee8] bg-opacity-70 animate-bounce hover:bg-indigo-400 hover:border-yellow-500 hover:text-white hover:opacity-50 hover:shadow-md hover:scale-125"
+              className="transition duration-500 transform px-6 py-2 m-4 inline bg-pink-300 bg-opacity-70 animate-bounce hover:bg-indigo-400 hover:border-yellow-500 hover:text-white hover:opacity-50 hover:shadow-md hover:scale-125"
               onClick={() => setIsCollapsed(!isCollapsed)}
             >
               <FiArrowUp />

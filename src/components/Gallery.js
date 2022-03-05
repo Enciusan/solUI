@@ -16,7 +16,7 @@ export default function Gallery() {
               <img alt="" src="../img/1.jpg" className="h-auto w-auto" />
             </div>
             <div>
-              <img alt="" src="../img/Enciu.jpg" className="h-auto w-auto" />
+              <img alt="" src="../img/enciu.jpg" className="h-auto w-auto" />
             </div>
             <div>
               <img alt="" src="../img/11.jpg" className="h-auto w-auto" />

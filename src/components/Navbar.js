@@ -136,6 +136,7 @@ export default function Navbar() {
                         </a>
                       </li>
                       <div className="pt-10">
+                      
                         <li className="text-lg font-pirata">
                           <a
                             href="#mint"
