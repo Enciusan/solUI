@@ -69,7 +69,7 @@ const Particle = () => {
             size: {
               random: {
                 enable: true,
-                minimumValue: 7,
+                minimumValue: 2.5,
               },
               value: 1,
             },

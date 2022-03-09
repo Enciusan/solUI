@@ -14,7 +14,7 @@ export default function About() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  console.log(offset);
+  // console.log();
 
   return (
     <div
