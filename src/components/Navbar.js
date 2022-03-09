@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Dialog, Transition as Thead } from "@headlessui/react";
 import { Transition } from "@tailwindui/react";
 import "../App.css";
 import { Link } from "react-router-dom";
@@ -20,6 +20,15 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
 
   return (
     <>
@@ -27,15 +36,15 @@ export default function Navbar() {
         {({ open }) => (
           <>
             <div className="px-auto flex">
-              <div className="h-full w-full">                
-                <div className="flex justify-center">                  
-                  <div className="hidden sm:flex md:w-max w-8/12">                    
+              <div className="h-full w-full">
+                <div className="flex justify-center">
+                  <div className="hidden sm:flex md:w-max w-8/12">
                     <div className="flex items-center lg:space-x-4 space-x-1 font-pirata">
-                    <Link
+                      <Link
                         to="/mintUkr"
                         className="flex justify-start w-full text-[#74acdf] lg:text-4xl px-3 py-2 rounded-md nav-underline "
                       >
-                        Mint &nbsp; <p className="text-[#fcd116]">Ukraina</p>
+                        Mint &nbsp; <p className="text-[#fcd116]">Ukraine</p>
                       </Link>
                       {navigation.map((item) => (
                         <a
@@ -72,6 +81,79 @@ export default function Navbar() {
                           {item.name}
                         </a>
                       ))}
+                      <div>
+                        <div className=" flex items-center justify-center">
+                          <button
+                            type="button"
+                            onClick={openModal}
+                            className="flex items-center lg:space-x-4 space-x-1 font-pirata text-white lg:text-4xl text-sm px-3 py-2 rounded-md nav-underline"
+                          >
+                            Staking
+                          </button>
+                        </div>
+                        <Thead appear show={isOpen} as={Fragment}>
+                          <Dialog
+                            as="div"
+                            className="fixed inset-0 z-10 overflow-y-auto"
+                            onClose={closeModal}
+                          >
+                            <div className="min-h-screen px-4 text-center">
+                              <Thead.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0"
+                                enterTo="opacity-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100"
+                                leaveTo="opacity-0"
+                              >
+                                <Dialog.Overlay className="fixed inset-0" />
+                              </Thead.Child>
+
+                              {/* This element is to trick the browser into centering the modal contents. */}
+                              <span
+                                className="inline-block h-screen align-middle"
+                                aria-hidden="true"
+                              >
+                                &#8203;
+                              </span>
+                              <Thead.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 scale-95"
+                                enterTo="opacity-100 scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 scale-100"
+                                leaveTo="opacity-0 scale-95"
+                              >
+                                <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                                  <Dialog.Title
+                                    as="h3"
+                                    className="text-lg font-medium leading-6 text-gray-900"
+                                  >
+                                    Staking
+                                  </Dialog.Title>
+                                  <div className="mt-2">
+                                    <p className="text-sm text-gray-500">
+                                      Staking system will come soon.
+                                    </p>
+                                  </div>
+
+                                  <div className="mt-4">
+                                    <button
+                                      type="button"
+                                      className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                                      onClick={closeModal}
+                                    >
+                                      Got it!
+                                    </button>
+                                  </div>
+                                </div>
+                              </Thead.Child>
+                            </div>
+                          </Dialog>
+                        </Thead>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -84,6 +166,7 @@ export default function Navbar() {
                       alt="Workflow"
                     />
                   </div>
+
                   <div></div>
 
                   {/* Mobile menu */}
@@ -106,7 +189,7 @@ export default function Navbar() {
                       </svg>
                     </button>
                   </div>
-
+                            
                   <Transition
                     show={isVisible}
                     enter="transition ease-out duration-150"
@@ -136,7 +219,6 @@ export default function Navbar() {
                         </a>
                       </li>
                       <div className="pt-10">
-                      
                         <li className="text-lg font-pirata">
                           <a
                             href="#mint"
@@ -169,7 +251,7 @@ export default function Navbar() {
                             Team
                           </a>
                         </li>
-                        
+
                         <li className="text-lg font-pirata">
                           <a
                             href="#about"

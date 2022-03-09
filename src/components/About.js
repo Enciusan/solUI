@@ -18,7 +18,7 @@ export default function About() {
 
   return (
     <div
-      className="flex justify-center w-3/4 h-full bg-gradient-to-tr from-[#a6b9fe] via-[#b9b0e9] to-pink-300 rounded-3xl opacity-90 mx-auto"
+      className="flex justify-center w-3/4 h-full bg-gradient-to-tr from-[#a6b9fe] via-[#b9b0e9] to-pink-300 rounded-3xl mx-auto"
       id="story"
     >
       <div className="text-white pb-10 ">

@@ -37,7 +37,7 @@ export default function Team() {
           <div className="sm:w-60 w-full h-full border-2 border-pink-300 shadow-md shadow-pink-300 rounded-lg bg-gradient-to-br from-[#a6b9fe] via-[#b9b0e9] to-pink-300 ">
             <img
               className="shadow-lg shadow-pink-300 rounded-md"
-              src="../img/enciu.jpg"
+              src="../img/enciu1.jpg"
               alt="enq"
             />
             <h1 className="text-white sm:text-4xl text-2xl font-germania text-center pt-10">

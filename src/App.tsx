@@ -16,6 +16,7 @@ import FAQ from "./components/FAQ";
 import { Route, Routes, Link, useLocation} from "react-router-dom";
 import Roadmap2 from "./components/Roadmap2";
 import Mint from "./pages/mint";
+import Particle from "./components/Particle";
 
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -52,7 +53,7 @@ const connection = new anchor.web3.Connection(rpcHost);
 
 const startDateSeed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
 
-const txTimeout = 30000; // milliseconds (confirm this works for your project)
+const txTimeout = 60000; // milliseconds (confirm this works for your project)
 
 
 
@@ -84,9 +85,11 @@ const App = () => {
           </Routes>}
 
       {location.pathname == "/" &&
+       
        <div className="w-full h-full bg-gradient-to-l from-[#a6b9fe] via-[#b9b0e9] to-pink-300">
-        <div className="flex flex-col md:w-full md:h-full ">        
-          <Navbar /> 
+         <Particle />
+        <div className="flex flex-col md:w-full md:h-full ">   
+          <Navbar />
           <Spacing /> 
           <Intro /> 
           <Spacing /> 
