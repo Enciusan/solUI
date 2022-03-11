@@ -48,7 +48,7 @@ const Particle = () => {
                 area: 1080,
               },
               limit:0,
-              value: 400,
+              value: 200,
             },
             opacity: {
               animation: {
